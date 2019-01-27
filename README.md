@@ -1,7 +1,8 @@
 # SmartReload
 Automatically reload Websites during development. Using PHP + jQuery AJAX
 ## Description
-This script checks if changes have been made to any files on the servers Webspache. If so, it triggers a reload of the Site (no cacheing, directly from the server).
+This script checks if changes have been made to any files on the servers Webspache periondically.
+If so, it triggers a reload of the Site (no cacheing, directly from the server).
 That way, ererytime you make a change and save your file the site wil be reloadet.
 ## Requirements
 * A Webserver with PHP.
@@ -15,10 +16,10 @@ That way, ererytime you make a change and save your file the site wil be reloade
 3. Make sure you have jQuery installed.
 ## Compatibility
 Has been testet on Windwos
-  *On the Client-side with 
-    * Google Chrome,
-    * Mozilla Firefox and 
-    * Microsoft Edge.
-  *On the Server-side with
-    * Microsoft IIS
-    * XAMPP
+- On the Client-side with 
+  - Google Chrome,
+  - Mozilla Firefox and 
+  - Microsoft Edge.
+- On the Server-side with
+  - Microsoft IIS
+  - XAMPP
