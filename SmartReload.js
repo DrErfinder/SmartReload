@@ -1,19 +1,29 @@
+var LastCount = 0;
+var ScrollPos = 0;
+var ScollBe;
+function SmartReload() {
+	$.get(window.location.origin + "/SmartReload.php", function(NewCount, status) {
+		if(LastCount == 0){
+			LastCount = NewCount;
+			ScollBe = $('html').css('scroll-behavior');
+			$('html').css('scroll-behavior', 'auto');
+			ScrollPos = Cookies.get('smartreload');
+			window.scrollTo(0, ScrollPos);
+			$('html').css('scroll-behavior', ScollBe);
+		}
+		else if(NewCount > LastCount) {
+			ScrollPos = window.pageYOffset;
+			Cookies.set('smartreload', ScrollPos)
+			location.reload(true);
+		}
+	});
+}
 if(jQuery) {
-	var LastCount = 0;
-	function SmartReload() {
-		$.get(window.location.origin + "/SmartReload.php", function(NewCount, status) {
-			if(LastCount == 0){
-				LastCount = NewCount;
-			}
-			else if(NewCount > LastCount) {
-				LastCount = NewCount;
-				location.reload(true);
-			}
-		});
-	}
 	$(document).ready(function() {
+    SmartReload();
 		setInterval(SmartReload, 2000);
 	});
+	console.log(Cookies);
 }
 else {
 	alert("Error: jQuery not installed!");
