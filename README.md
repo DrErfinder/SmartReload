@@ -19,7 +19,7 @@ It also scrols automaticly to the last possition.
 ```html
 <script src="/SmartReload.js"></script>
 ```
-3. Make sure you have jQuery installed.
+3. Make sure you have jQuery + js-cookie installed.
  
 ## Compatibility
 Has been testet on Windwos
