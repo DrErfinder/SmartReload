@@ -1,15 +1,18 @@
 # SmartReload
-Automatically reload Websites during development. Using PHP + jQuery AJAX.
+Automatically reload Websites during development. Using PHP + jQuery AJAX + Cookies.
  
 ## Description
 This script checks if changes have been made to any files on the servers Webspache periondically.
 If so, it triggers a reload of the Site (no cacheing, directly from the server).
 That way, ererytime you make a change and save your file the site wil be reloadet.
+It also scrols automaticly to the last possition.
  
 ## Requirements
-* A Webserver with PHP (testet with 7.3.1).
-* A website with jQuery included (testet with 3.3.1).
- 
+* A Webserver with PHP (testet with v7.3.1).
+* A website with
+  * [jQuery](https://jquery.com/download/) included (testet with v3.3.1).
+  * [js-cookie](https://github.com/js-cookie/js-cookie) included (testet with v2.2.0).
+
 ## Installation
 1. Download "SmartReload.php" and "SmartReload.js" and plache them in your servers webspace root.
 2. Include the following Code in every (sub-)pages where you want SmartReload functionality:  
