@@ -40,3 +40,9 @@ If your having problems with the Software here are some tips:
 - PHP is working.
 
 Still not working? Feel free to open a issue.
+
+## License
+I'm using the 
+[WTFPL – Do What the Fuck You Want to Public License](http://www.wtfpl.net/)
+
+![WTFPL Badge](/wtfpl-badge.png)
