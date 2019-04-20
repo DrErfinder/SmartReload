@@ -20,10 +20,9 @@ function SmartReload() {
 }
 if(jQuery) {
 	$(document).ready(function() {
-    SmartReload();
+		SmartReload();
 		setInterval(SmartReload, 2000);
 	});
-	console.log(Cookies);
 }
 else {
 	alert("Error: jQuery not installed!");
