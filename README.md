@@ -9,16 +9,17 @@ It also scrols automaticly to the last possition.
  
 ## Requirements
 * A Webserver with PHP (testet with v7.3.1).
-* A website with
-  * [jQuery](https://jquery.com/download/) included (testet with v3.3.1).
+* A website with [jQuery](https://jquery.com/download/) included (testet with v3.3.1).
 
 ## Installation
 1. Download "SmartReload.php" and "SmartReload.js" and plache them in your servers webspace root.
-2. Include the following Code in every (sub-)pages where you want SmartReload functionality:  
+2. Include the following Code in every (sub-)page where you want SmartReload functionality:  
 ```html
 <script src="/SmartReload.js"></script>
 ```
 3. Make sure you have jQuery installed.
+
+### Make sure to remove both Files + the JS-Include when deploying the Site! 
  
 ## Compatibility
 Has been testet on Windwos
