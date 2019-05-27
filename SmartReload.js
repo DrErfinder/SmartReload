@@ -7,13 +7,13 @@ function SmartReload() {
 			LastCount = NewCount;
 			ScollBe = $('html').css('scroll-behavior');
 			$('html').css('scroll-behavior', 'auto');
-			ScrollPos = Cookies.get('smartreload');
+			ScrollPos = localStorage.getItem('smartreload');
 			window.scrollTo(0, ScrollPos);
 			$('html').css('scroll-behavior', ScollBe);
 		}
 		else if(NewCount > LastCount) {
 			ScrollPos = window.pageYOffset;
-			Cookies.set('smartreload', ScrollPos)
+			localStorage.setItem('smartreload', ScrollPos)
 			location.reload(true);
 		}
 	});
